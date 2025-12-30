@@ -1,8 +1,9 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import ChatWidget from '@/components/ChatWidget'
 import { COMPANY_CONFIG } from '@/constants'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -40,6 +41,12 @@ export const metadata: Metadata = {
   },
 }
 
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  minimumScale: 1,
+}
+
 export default function RootLayout({
   children,
 }: {
@@ -58,6 +65,9 @@ export default function RootLayout({
           </main>
           <Footer />
         </div>
+        
+        {/* Salesforce Embedded Messaging Chat Widget */}
+        <ChatWidget />
       </body>
     </html>
   )
