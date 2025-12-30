@@ -48,9 +48,9 @@ export const COMPANY_CONFIG = {
   
   // Social Media Links
   social: {
-    linkedin: 'https://www.linkedin.com/company/salesforcetroopai',
-    twitter: 'https://twitter.com/salesforcetroopai',
-    youtube: 'https://www.youtube.com/@salesforcetroopai',
+    linkedin: 'https://www.linkedin.com/company/salesforce-troop',
+    twitter: 'https://twitter.com/karkra_nikhil',
+    youtube: 'https://www.youtube.com/@salesforcetroop',
     // Add more social platforms as needed
   },
   
